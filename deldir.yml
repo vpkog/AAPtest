@@ -1,0 +1,9 @@
+---
+- name: del dir
+  hosts: all
+#  become: true
+  tasks:
+  - name: フォルダ(/home/ec2-user/test01)を削除する
+    file:
+      path: /home/ec2-user/test01
+      state: absent
