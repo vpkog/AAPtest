@@ -1,7 +1,7 @@
 ---
 - name: Playbook Sample
   hosts: all
-  become: true
+#  become: true
   tasks:
   - name: フォルダ(/home/ec2-user/test01)を作成する
     file:
